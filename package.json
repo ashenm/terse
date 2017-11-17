@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/ashenm/terse/issues"
   },
-  "homepage": "https://github.com/ashenm/terse#readme"
+  "homepage": "https://github.com/ashenm/terse#readme",
+  "dependencies": {
+    "sqlite3": "^3"
+  }
 }
