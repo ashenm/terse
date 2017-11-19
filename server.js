@@ -57,6 +57,7 @@ http.createServer((request, response) => {
   if (/^\/favicon\.ico$/.test(pURL.pathname)) {
     response.writeHead(404);
     response.end(null);
+    return;
   }
 
   // redirect any exceptions to webroot
