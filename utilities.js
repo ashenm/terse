@@ -12,8 +12,8 @@ const utilities = {
    * Flush `data` to `stream` and end response cycle
    * with corresponding response header for `status`
    */
-  respond(stream, status, data) {
-    stream.writeHead(status);
+  respond(stream, status, data, mimetype) {
+    stream.writeHead(status, {'Content-Type': mimetype || 'text/plain'});
     stream.end(data || stream.statusMessage);
   },
 
@@ -25,7 +25,7 @@ const utilities = {
     utilities.respond(stream, 200, JSON.stringify({
       shortURL: `${host}/${shortURL}`,
       longURL: longURL
-    }));
+    }), 'application/json');
   },
 
   /**
