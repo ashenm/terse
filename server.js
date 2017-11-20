@@ -19,6 +19,13 @@ http.createServer((request, response) => {
 
   const pURL = url.parse(request.url);
 
+  // only allow GET requests
+  if (!/GET/.test(request.method)) {
+    response.writeHead(405, {'Content-Type': 'text/plain'});
+    response.end(response.statusMessage);
+    return;
+  }
+
   // route /terse/:url
   if (/^\/terse\//.test(pURL.pathname)) {
     const match = /(?:\w{1,}:\/\/)?(?:\w{1,}\.)?\w{1,}\.\w{1,}.{0,}/.exec(pURL.path);
