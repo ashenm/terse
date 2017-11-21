@@ -66,14 +66,14 @@ class Terse {
 
       // serialising execution to allow automated internal
       // table creation prior overriding their defaults
-      terse.db.serialize(function() {
+      this.serialize(function() {
 
         // initialise table
-        terse.db.run(`CREATE TABLE IF NOT EXISTS terse (id INTEGER PRIMARY KEY AUTOINCREMENT, url TEXT NOT NULL)`);
+        this.run(`CREATE TABLE IF NOT EXISTS terse (id INTEGER PRIMARY KEY AUTOINCREMENT, url TEXT NOT NULL)`);
 
         // override starting `id` to 3853
         // reserving two letter shortened URLs
-        terse.db.run(`INSERT INTO sqlite_sequence (name, seq) SELECT 'terse', 3853 WHERE NOT EXISTS (SELECT 1 FROM sqlite_sequence WHERE name='terse')`);
+        this.run(`INSERT INTO sqlite_sequence (name, seq) SELECT 'terse', 3853 WHERE NOT EXISTS (SELECT 1 FROM sqlite_sequence WHERE name='terse')`);
 
       });
 
