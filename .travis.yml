@@ -1,0 +1,17 @@
+dist:
+  bionic
+
+language:
+  node_js
+
+install:
+  true
+
+script:
+  true
+
+deploy:
+  app: incept
+  provider: heroku
+  api_key: $HEROKU_TOKEN
+  on: master

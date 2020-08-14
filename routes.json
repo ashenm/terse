@@ -1,0 +1,38 @@
+[
+  { 
+    "path": "example",
+    "url": "https://www.example.com/"
+  },
+  {
+    "path": "html5-logo",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png"
+  },
+  {
+    "path": "alice.txt",
+    "url": "https://raw.githubusercontent.com/ashenm/google-pyquick/master/basic/alice.txt"
+  },
+  {
+    "path": "list.txt",
+    "url": "https://gist.githubusercontent.com/ashenm/b65240c553f5dc03006038f621115e6b/raw/list.txt"
+  },
+  {
+    "path": "spellings.txt",
+    "url": "https://gist.githubusercontent.com/ashenm/c939fd0afd9b2d3204d727579d1e461b/raw/spellings.txt"
+  },
+  {
+    "path": "oredo.txt",
+    "url": "https://gist.githubusercontent.com/ashenm/a436f0e896f1eb230e14f299ca728c14/raw/oredo.txt"
+  },
+  {
+    "path": "search",
+    "url": "https://duckduckgo.com/?kg=p&kad=en_US&kp=-2"
+  },
+  {
+    "path": "excel-functions",
+    "url": "https://support.office.com/en-us/article/excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188"
+  },
+  {
+    "path": "firefox-logo",
+    "url": "https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"
+  }
+]
